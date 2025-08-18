@@ -1,0 +1,4 @@
+Atendimento nº 001
+Usuário não conseguia acessar a internet.
+Solução: reiniciar o roteador e atualizar IP.
+Tempo total: 15 minutos.
