@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Euro Travels</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" icon="image/x-icon" href="./logot.png">
+</head>
+<body>
+  <header class="top-nav">
+    <div class="logo">
+  <img src="./logot.png" alt="Euro Travels Logo" class="logo-img">
+  <span>Euro Travels</span>
+</div>
+
+    <nav class="menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencias">Experiências</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#formulario">Pré-cotação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero-carousel swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url('https://cdn.getyourguide.com/img/location/5ffeb39946966.jpeg/88.jpg')"></div>
+      <div class="swiper-slide" style="background-image:url('https://inglaterraviajar.com/wp-content/uploads/2019/01/big-ben-en-londres.jpg')"></div>
+      <div class="swiper-slide" style="background-image:url('https://wallpaperaccess.com/full/1642341.jpg')"></div>
+    </div>
+  </section>
+
+  <section class="container" id="sobre">
+    <h2 class="section-title">Quem Somos</h2>
+    <p>Na Euro Travels, desenhamos viagens personalizadas que conectam você com a Europa de forma única. Nossa missão é proporcionar uma experiência memorável do início ao fim.</p>
+  </section>
+
+  <section class="container" id="experiencias">
+    <h2 class="section-title">Nossas Experiências</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://th.bing.com/th/id/R.ad3acf9aace8e505763946c16ab14c75?rik=dv4LME9qH5c87A&pid=ImgRaw&r=0" alt="Europa" />
+        <h3>Roteiros Europeus</h3>
+      </div>
+      <div class="card">
+        <img src="https://th.bing.com/th/id/R.3ec8c7110b3b348eba28e409409071ba?rik=SfLNqL%2bZCbef0Q&riu=http%3a%2f%2fblog.assistentedeviagem.com.br%2fwp-content%2fuploads%2f2024%2f06%2fo-que-fazer-na-romenia-1024x682.jpg&ehk=lmXoXsDHqr8KnkpW8Txf5UrusiGIk%2bbn3sQUOrRtTBI%3d&risl=&pid=ImgRaw&r=0" alt="Leste Europeu" />
+        <h3>Leste Europeu</h3>
+      </div>
+      <div class="card">
+        <img src="https://www.state.gov/wp-content/uploads/2018/11/Estonia-2109x1406.jpg" alt="Descobertas" />
+        <h3>Descobertas</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="galeria">
+    <h2 class="section-title">Galeria de Destinos</h2>
+    <div class="swiper gallery-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80')"></div>
+        <div class="swiper-slide" style="background-image:url('https://a.cdn-hotels.com/gdcs/production63/d486/6c4a6a3d-15f2-4fe5-a27c-3038c47e773b.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('https://elviajerofeliz.com/wp-content/uploads/2018/05/que-ver-en-esloveniaa.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80')"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="formulario">
+    <h2 class="section-title">Formulário de destino</h2>
+    <form action="https://formsubmit.co/contato@natleva.com" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="Telefone/WhatsApp" required />
+
+      <label for="destino">Destino desejado:</label>
+      <input type="text" id="destino" name="destino" placeholder="Destino desejado" required />
+
+      <label for="tipo_viagem">Tipo de viagem:</label>
+      <select name="tipo_viagem" id="tipo_viagem" required>
+        <option value="">Selecione uma opção</option>
+        <option value="Lazer">Lazer</option>  
+        <option value="Negócios">Negócios</option>
+        <option value="Romântica">Romântica</option>
+        <option value="Familiar">Familiar</option>
+      </select>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Fale mais sobre o que você deseja..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section class="container" id="contato">
+    <h2 class="section-title">Fale Conosco</h2>
+    <p>Email: contato@eurotravels.com<br>
+    WhatsApp: (00) 91234-5678</p>
+    <p>Siga-nos no <a href="https://instagram.com/natlevaviagens" target="_blank">@eurotravels</a></p>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Euro Travels. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="floating-btn" href="https://wa.me/5511966396692" target="_blank">💬 Fale conosco</a>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.hero-carousel', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+    });
+
+    new Swiper('.gallery-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        }
+      }
+    });
+  </script>
+</body>
+</html>
